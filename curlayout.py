@@ -12,4 +12,4 @@ class Module(bumblebee.engine.Module):
 			result = bumblebee.util.execute("xkblayout-state print %s")
 		except RuntimeError:
 			return "n/a"
-		return result
+		return u"\uf11c  %s" % result
